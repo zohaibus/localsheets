@@ -13,10 +13,10 @@ Part of the LocalOffice suite, alongside
 ---
 
 **The local AI reading the budget and flagging every over-budget row, applied as one undoable patch:**
-<img width="1280" height="720" alt="LocalSheets local AI flagging over-budget rows in the budget template" src="https://github.com/user-attachments/assets/9bf1db60-5d68-4881-aefd-cb9ad7298850" />
+<img width="1280" height="720" alt="LocalSheets local AI flagging over-budget rows in the budget template" src="https://github.com/user-attachments/assets/e52f603d-6ec9-49f5-bbc5-a57e3d60131f" />
 
 **Change one gain on the Joints sheet and the Computed sheet recomputes damping ratio, settling time, and class live. Here, J2 tunes from underdamped to critically damped:**
-<img width="1280" height="720" alt="LocalSheets recomputing a 6-DOF PID calibration as a joint gain changes" src="https://github.com/user-attachments/assets/bfa048e9-4aa9-4d60-b274-ef67689e3848" />
+<img width="1280" height="720" alt="LocalSheets recomputing a 6-DOF PID calibration as a joint gain changes" src="https://github.com/user-attachments/assets/1ae65fbe-0b1f-43ea-aad6-23e782b2111f" />
 
 
 ## Why LocalSheets feels different
