@@ -1,0 +1,79 @@
+{
+  "version": "2.0",
+  "tool": "localsheets",
+  "meta": { "title": "RSU Vest Tracker" },
+  "created": "2026-05-25T00:00:00Z",
+  "modified": "2026-05-25T00:00:00Z",
+  "sheets": {
+    "s_inputs": {
+      "name": "Inputs",
+      "cells": {
+        "A1": { "raw": "Stock Price ($)",        "value": "Stock Price ($)",        "type": "text" },
+        "B1": { "raw": "175.50",                  "value": 175.5,                     "type": "number", "format": { "numfmt": "currency", "bold": true } },
+        "A2": { "raw": "Federal + State Tax",     "value": "Federal + State Tax",     "type": "text" },
+        "B2": { "raw": "0.42",                    "value": 0.42,                      "type": "number", "format": { "numfmt": "percent" } },
+        "A3": { "raw": "Notes",                   "value": "Notes",                   "type": "text", "format": { "italic": true } },
+        "B3": { "raw": "Edit cells above; the Vesting sheet recomputes.", "value": "Edit cells above; the Vesting sheet recomputes.", "type": "text", "format": { "italic": true } }
+      },
+      "colWidths": { "0": 180, "1": 280 },
+      "rowHeights": {},
+      "selR": 0, "selC": 1
+    },
+    "s_vesting": {
+      "name": "Vesting",
+      "cells": {
+        "A1": { "raw": "Grant",        "value": "Grant",        "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "B1": { "raw": "Vest Date",    "value": "Vest Date",    "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "C1": { "raw": "Shares",       "value": "Shares",       "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "D1": { "raw": "Stock Price",  "value": "Stock Price",  "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "E1": { "raw": "Gross",        "value": "Gross",        "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "F1": { "raw": "Est. Tax",     "value": "Est. Tax",     "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "G1": { "raw": "Net",          "value": "Net",          "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+
+        "A2": { "raw": "Initial grant", "value": "Initial grant", "type": "text" },
+        "B2": { "raw": "2026-08-15",    "value": "2026-08-15",    "type": "text" },
+        "C2": { "raw": "250",           "value": 250,             "type": "number" },
+        "D2": { "raw": "=Inputs!B1",    "formula": "=Inputs!B1",  "format": { "numfmt": "currency" } },
+        "E2": { "raw": "=C2*D2",        "formula": "=C2*D2",      "format": { "numfmt": "currency" } },
+        "F2": { "raw": "=E2*Inputs!B2", "formula": "=E2*Inputs!B2", "format": { "numfmt": "currency" } },
+        "G2": { "raw": "=E2-F2",        "formula": "=E2-F2",      "format": { "numfmt": "currency", "bold": true } },
+
+        "A3": { "raw": "Initial grant", "value": "Initial grant", "type": "text" },
+        "B3": { "raw": "2026-11-15",    "value": "2026-11-15",    "type": "text" },
+        "C3": { "raw": "250",           "value": 250,             "type": "number" },
+        "D3": { "raw": "=Inputs!B1",    "formula": "=Inputs!B1",  "format": { "numfmt": "currency" } },
+        "E3": { "raw": "=C3*D3",        "formula": "=C3*D3",      "format": { "numfmt": "currency" } },
+        "F3": { "raw": "=E3*Inputs!B2", "formula": "=E3*Inputs!B2", "format": { "numfmt": "currency" } },
+        "G3": { "raw": "=E3-F3",        "formula": "=E3-F3",      "format": { "numfmt": "currency", "bold": true } },
+
+        "A4": { "raw": "Initial grant", "value": "Initial grant", "type": "text" },
+        "B4": { "raw": "2027-02-15",    "value": "2027-02-15",    "type": "text" },
+        "C4": { "raw": "250",           "value": 250,             "type": "number" },
+        "D4": { "raw": "=Inputs!B1",    "formula": "=Inputs!B1",  "format": { "numfmt": "currency" } },
+        "E4": { "raw": "=C4*D4",        "formula": "=C4*D4",      "format": { "numfmt": "currency" } },
+        "F4": { "raw": "=E4*Inputs!B2", "formula": "=E4*Inputs!B2", "format": { "numfmt": "currency" } },
+        "G4": { "raw": "=E4-F4",        "formula": "=E4-F4",      "format": { "numfmt": "currency", "bold": true } },
+
+        "A5": { "raw": "Initial grant", "value": "Initial grant", "type": "text" },
+        "B5": { "raw": "2027-05-15",    "value": "2027-05-15",    "type": "text" },
+        "C5": { "raw": "250",           "value": 250,             "type": "number" },
+        "D5": { "raw": "=Inputs!B1",    "formula": "=Inputs!B1",  "format": { "numfmt": "currency" } },
+        "E5": { "raw": "=C5*D5",        "formula": "=C5*D5",      "format": { "numfmt": "currency" } },
+        "F5": { "raw": "=E5*Inputs!B2", "formula": "=E5*Inputs!B2", "format": { "numfmt": "currency" } },
+        "G5": { "raw": "=E5-F5",        "formula": "=E5-F5",      "format": { "numfmt": "currency", "bold": true } },
+
+        "A7": { "raw": "Totals",        "value": "Totals",        "type": "text", "format": { "bold": true } },
+        "C7": { "raw": "=SUM(C2:C5)",   "formula": "=SUM(C2:C5)", "format": { "bold": true } },
+        "E7": { "raw": "=SUM(E2:E5)",   "formula": "=SUM(E2:E5)", "format": { "numfmt": "currency", "bold": true } },
+        "F7": { "raw": "=SUM(F2:F5)",   "formula": "=SUM(F2:F5)", "format": { "numfmt": "currency", "bold": true } },
+        "G7": { "raw": "=SUM(G2:G5)",   "formula": "=SUM(G2:G5)", "format": { "numfmt": "currency", "bold": true } }
+      },
+      "colWidths": { "0": 130, "1": 110, "2": 80, "3": 110, "4": 120, "5": 110, "6": 120 },
+      "rowHeights": {},
+      "selR": 1, "selC": 0
+    }
+  },
+  "sheetOrder": ["s_inputs", "s_vesting"],
+  "activeSheet": "s_vesting",
+  "settings": { "theme": "auto" }
+}

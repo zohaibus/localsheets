@@ -1,0 +1,70 @@
+{
+  "version": "2.0",
+  "tool": "localsheets",
+  "meta": { "title": "Rental Cash Flow" },
+  "created": "2026-05-25T00:00:00Z",
+  "modified": "2026-05-25T00:00:00Z",
+  "sheets": {
+    "s_rental": {
+      "name": "Properties",
+      "cells": {
+        "A1": { "raw": "Address",         "value": "Address",         "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "B1": { "raw": "Purchase Price",  "value": "Purchase Price",  "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "C1": { "raw": "Rent / mo",       "value": "Rent / mo",       "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "D1": { "raw": "Mortgage / mo",   "value": "Mortgage / mo",   "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "E1": { "raw": "Property Tax /mo","value": "Property Tax /mo","type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "F1": { "raw": "Insurance /mo",   "value": "Insurance /mo",   "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "G1": { "raw": "Maintenance /mo", "value": "Maintenance /mo", "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "H1": { "raw": "Net Monthly",     "value": "Net Monthly",     "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "I1": { "raw": "Annual Cash Flow","value": "Annual Cash Flow","type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "J1": { "raw": "Cap Rate",        "value": "Cap Rate",        "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+
+        "A2": { "raw": "123 Main St",     "value": "123 Main St",     "type": "text" },
+        "B2": { "raw": "320000",          "value": 320000,            "type": "number", "format": { "numfmt": "currency" } },
+        "C2": { "raw": "2600",            "value": 2600,              "type": "number", "format": { "numfmt": "currency" } },
+        "D2": { "raw": "1450",            "value": 1450,              "type": "number", "format": { "numfmt": "currency" } },
+        "E2": { "raw": "280",             "value": 280,               "type": "number", "format": { "numfmt": "currency" } },
+        "F2": { "raw": "120",             "value": 120,               "type": "number", "format": { "numfmt": "currency" } },
+        "G2": { "raw": "180",             "value": 180,               "type": "number", "format": { "numfmt": "currency" } },
+        "H2": { "raw": "=C2-D2-E2-F2-G2", "formula": "=C2-D2-E2-F2-G2", "format": { "numfmt": "currency", "bold": true } },
+        "I2": { "raw": "=H2*12",          "formula": "=H2*12",         "format": { "numfmt": "currency", "bold": true } },
+        "J2": { "raw": "=I2/B2",          "formula": "=I2/B2",         "format": { "numfmt": "percent" } },
+
+        "A3": { "raw": "456 Oak Ave",     "value": "456 Oak Ave",     "type": "text" },
+        "B3": { "raw": "265000",          "value": 265000,            "type": "number", "format": { "numfmt": "currency" } },
+        "C3": { "raw": "2200",            "value": 2200,              "type": "number", "format": { "numfmt": "currency" } },
+        "D3": { "raw": "1250",            "value": 1250,              "type": "number", "format": { "numfmt": "currency" } },
+        "E3": { "raw": "220",             "value": 220,               "type": "number", "format": { "numfmt": "currency" } },
+        "F3": { "raw": "95",              "value": 95,                "type": "number", "format": { "numfmt": "currency" } },
+        "G3": { "raw": "150",             "value": 150,               "type": "number", "format": { "numfmt": "currency" } },
+        "H3": { "raw": "=C3-D3-E3-F3-G3", "formula": "=C3-D3-E3-F3-G3", "format": { "numfmt": "currency", "bold": true } },
+        "I3": { "raw": "=H3*12",          "formula": "=H3*12",         "format": { "numfmt": "currency", "bold": true } },
+        "J3": { "raw": "=I3/B3",          "formula": "=I3/B3",         "format": { "numfmt": "percent" } },
+
+        "A4": { "raw": "789 Pine Rd",     "value": "789 Pine Rd",     "type": "text" },
+        "B4": { "raw": "410000",          "value": 410000,            "type": "number", "format": { "numfmt": "currency" } },
+        "C4": { "raw": "3100",            "value": 3100,              "type": "number", "format": { "numfmt": "currency" } },
+        "D4": { "raw": "1850",            "value": 1850,              "type": "number", "format": { "numfmt": "currency" } },
+        "E4": { "raw": "360",             "value": 360,               "type": "number", "format": { "numfmt": "currency" } },
+        "F4": { "raw": "140",             "value": 140,               "type": "number", "format": { "numfmt": "currency" } },
+        "G4": { "raw": "210",             "value": 210,               "type": "number", "format": { "numfmt": "currency" } },
+        "H4": { "raw": "=C4-D4-E4-F4-G4", "formula": "=C4-D4-E4-F4-G4", "format": { "numfmt": "currency", "bold": true } },
+        "I4": { "raw": "=H4*12",          "formula": "=H4*12",         "format": { "numfmt": "currency", "bold": true } },
+        "J4": { "raw": "=I4/B4",          "formula": "=I4/B4",         "format": { "numfmt": "percent" } },
+
+        "A6": { "raw": "PORTFOLIO TOTALS","value": "PORTFOLIO TOTALS","type": "text", "format": { "bold": true } },
+        "B6": { "raw": "=SUM(B2:B4)",     "formula": "=SUM(B2:B4)",    "format": { "numfmt": "currency", "bold": true } },
+        "C6": { "raw": "=SUM(C2:C4)",     "formula": "=SUM(C2:C4)",    "format": { "numfmt": "currency", "bold": true } },
+        "H6": { "raw": "=SUM(H2:H4)",     "formula": "=SUM(H2:H4)",    "format": { "numfmt": "currency", "bold": true } },
+        "I6": { "raw": "=SUM(I2:I4)",     "formula": "=SUM(I2:I4)",    "format": { "numfmt": "currency", "bold": true } },
+        "J6": { "raw": "=I6/B6",          "formula": "=I6/B6",         "format": { "numfmt": "percent", "bold": true } }
+      },
+      "colWidths": { "0": 150, "1": 130, "2": 100, "3": 120, "4": 130, "5": 110, "6": 130, "7": 120, "8": 140, "9": 90 },
+      "rowHeights": {},
+      "selR": 1, "selC": 0
+    }
+  },
+  "sheetOrder": ["s_rental"],
+  "activeSheet": "s_rental",
+  "settings": { "theme": "auto" }
+}

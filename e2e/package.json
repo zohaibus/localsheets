@@ -1,0 +1,16 @@
+{
+  "name": "localsheets-e2e",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Browser-level end-to-end verification for LocalSheets. NOT part of the shipped artifact.",
+  "scripts": {
+    "install-browsers": "playwright install chromium firefox webkit",
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}

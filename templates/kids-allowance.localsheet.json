@@ -1,0 +1,71 @@
+{
+  "version": "2.0",
+  "tool": "localsheets",
+  "meta": { "title": "Kids Allowance Tracker" },
+  "created": "2026-05-25T00:00:00Z",
+  "modified": "2026-05-25T00:00:00Z",
+  "sheets": {
+    "s_log": {
+      "name": "Log",
+      "cells": {
+        "A1": { "raw": "Date",     "value": "Date",     "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "B1": { "raw": "Activity", "value": "Activity", "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "C1": { "raw": "Earned",   "value": "Earned",   "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "D1": { "raw": "Spent",    "value": "Spent",    "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "E1": { "raw": "Balance",  "value": "Balance",  "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+
+        "A2": { "raw": "2026-05-01", "value": "2026-05-01", "type": "text" },
+        "B2": { "raw": "Starting balance", "value": "Starting balance", "type": "text" },
+        "C2": { "raw": "20",         "value": 20,            "type": "number", "format": { "numfmt": "currency" } },
+        "D2": { "raw": "0",          "value": 0,             "type": "number", "format": { "numfmt": "currency" } },
+        "E2": { "raw": "=C2-D2",     "formula": "=C2-D2",     "format": { "numfmt": "currency", "bold": true } },
+
+        "A3": { "raw": "2026-05-05", "value": "2026-05-05", "type": "text" },
+        "B3": { "raw": "Cleaned room", "value": "Cleaned room", "type": "text" },
+        "C3": { "raw": "5",          "value": 5,             "type": "number", "format": { "numfmt": "currency" } },
+        "D3": { "raw": "0",          "value": 0,             "type": "number", "format": { "numfmt": "currency" } },
+        "E3": { "raw": "=E2+C3-D3",  "formula": "=E2+C3-D3",  "format": { "numfmt": "currency", "bold": true } },
+
+        "A4": { "raw": "2026-05-08", "value": "2026-05-08", "type": "text" },
+        "B4": { "raw": "Library book lost", "value": "Library book lost", "type": "text" },
+        "C4": { "raw": "0",          "value": 0,             "type": "number", "format": { "numfmt": "currency" } },
+        "D4": { "raw": "8",          "value": 8,             "type": "number", "format": { "numfmt": "currency" } },
+        "E4": { "raw": "=E3+C4-D4",  "formula": "=E3+C4-D4",  "format": { "numfmt": "currency", "bold": true } },
+
+        "A5": { "raw": "2026-05-12", "value": "2026-05-12", "type": "text" },
+        "B5": { "raw": "Dishes for a week", "value": "Dishes for a week", "type": "text" },
+        "C5": { "raw": "10",         "value": 10,            "type": "number", "format": { "numfmt": "currency" } },
+        "D5": { "raw": "0",          "value": 0,             "type": "number", "format": { "numfmt": "currency" } },
+        "E5": { "raw": "=E4+C5-D5",  "formula": "=E4+C5-D5",  "format": { "numfmt": "currency", "bold": true } },
+
+        "A6": { "raw": "2026-05-18", "value": "2026-05-18", "type": "text" },
+        "B6": { "raw": "Ice cream",  "value": "Ice cream",  "type": "text" },
+        "C6": { "raw": "0",          "value": 0,             "type": "number", "format": { "numfmt": "currency" } },
+        "D6": { "raw": "6",          "value": 6,             "type": "number", "format": { "numfmt": "currency" } },
+        "E6": { "raw": "=E5+C6-D6",  "formula": "=E5+C6-D6",  "format": { "numfmt": "currency", "bold": true } },
+
+        "A7": { "raw": "2026-05-22", "value": "2026-05-22", "type": "text" },
+        "B7": { "raw": "Walked dog",  "value": "Walked dog",  "type": "text" },
+        "C7": { "raw": "3",          "value": 3,             "type": "number", "format": { "numfmt": "currency" } },
+        "D7": { "raw": "0",          "value": 0,             "type": "number", "format": { "numfmt": "currency" } },
+        "E7": { "raw": "=E6+C7-D7",  "formula": "=E6+C7-D7",  "format": { "numfmt": "currency", "bold": true } },
+
+        "A9": { "raw": "Totals",     "value": "Totals",     "type": "text", "format": { "bold": true } },
+        "B9": { "raw": "Current balance →", "value": "Current balance →", "type": "text", "format": { "bold": true, "align": "right" } },
+        "C9": { "raw": "=SUM(C2:C7)", "formula": "=SUM(C2:C7)", "format": { "numfmt": "currency", "bold": true, "bg": "#caffbf" } },
+        "D9": { "raw": "=SUM(D2:D7)", "formula": "=SUM(D2:D7)", "format": { "numfmt": "currency", "bold": true, "bg": "#ffadad" } },
+        "E9": { "raw": "=E7",        "formula": "=E7",        "format": { "numfmt": "currency", "bold": true, "bg": "#fdffb6" } },
+
+        "G1": { "raw": "Balance trend", "value": "Balance trend", "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "G2": { "raw": "=SPARKLINE(E2:E7, \"line\", \"#5a4a2f\")", "formula": "=SPARKLINE(E2:E7, \"line\", \"#5a4a2f\")" }
+      },
+      "merges": ["G2:G7"],
+      "colWidths": { "0": 110, "1": 200, "2": 90, "3": 90, "4": 110, "5": 110, "6": 110 },
+      "rowHeights": {},
+      "selR": 1, "selC": 0
+    }
+  },
+  "sheetOrder": ["s_log"],
+  "activeSheet": "s_log",
+  "settings": { "theme": "auto" }
+}

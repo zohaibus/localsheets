@@ -1,0 +1,25 @@
+{"timestamp": 0.000, "joint": "J1", "angle_rad": 0.0000, "velocity_rad_s": 0.000, "torque_Nm": 0.0,  "current_A": 0.00, "temp_C": 24.1}
+{"timestamp": 0.010, "joint": "J1", "angle_rad": 0.0023, "velocity_rad_s": 0.230, "torque_Nm": 4.2,  "current_A": 0.18, "temp_C": 24.1}
+{"timestamp": 0.020, "joint": "J1", "angle_rad": 0.0092, "velocity_rad_s": 0.692, "torque_Nm": 12.8, "current_A": 0.54, "temp_C": 24.2}
+{"timestamp": 0.030, "joint": "J1", "angle_rad": 0.0208, "velocity_rad_s": 1.158, "torque_Nm": 21.4, "current_A": 0.91, "temp_C": 24.2}
+{"timestamp": 0.040, "joint": "J1", "angle_rad": 0.0370, "velocity_rad_s": 1.624, "torque_Nm": 28.9, "current_A": 1.22, "temp_C": 24.3}
+{"timestamp": 0.050, "joint": "J1", "angle_rad": 0.0578, "velocity_rad_s": 2.080, "torque_Nm": 33.5, "current_A": 1.42, "temp_C": 24.3}
+{"timestamp": 0.060, "joint": "J1", "angle_rad": 0.0832, "velocity_rad_s": 2.539, "torque_Nm": 35.7, "current_A": 1.51, "temp_C": 24.4}
+{"timestamp": 0.070, "joint": "J1", "angle_rad": 0.1131, "velocity_rad_s": 2.992, "torque_Nm": 34.2, "current_A": 1.45, "temp_C": 24.5}
+{"timestamp": 0.080, "joint": "J1", "angle_rad": 0.1475, "velocity_rad_s": 3.437, "torque_Nm": 29.8, "current_A": 1.26, "temp_C": 24.6}
+{"timestamp": 0.090, "joint": "J1", "angle_rad": 0.1862, "velocity_rad_s": 3.869, "torque_Nm": 22.1, "current_A": 0.93, "temp_C": 24.7}
+{"timestamp": 0.100, "joint": "J1", "angle_rad": 0.2291, "velocity_rad_s": 4.285, "torque_Nm": 11.5, "current_A": 0.49, "temp_C": 24.8}
+{"timestamp": 0.110, "joint": "J1", "angle_rad": 0.2760, "velocity_rad_s": 4.682, "torque_Nm": -1.2, "current_A": -0.05, "temp_C": 24.9}
+{"timestamp": 0.120, "joint": "J1", "angle_rad": 0.3265, "velocity_rad_s": 5.057, "torque_Nm": -15.4,"current_A": -0.65, "temp_C": 25.0}
+{"timestamp": 0.130, "joint": "J1", "angle_rad": 0.3804, "velocity_rad_s": 5.407, "torque_Nm": -29.7,"current_A": -1.26, "temp_C": 25.1}
+{"timestamp": 0.140, "joint": "J1", "angle_rad": 0.4374, "velocity_rad_s": 5.732, "torque_Nm": -33.5,"current_A": -1.42, "temp_C": 25.2}
+{"timestamp": 0.150, "joint": "J1", "angle_rad": 0.4971, "velocity_rad_s": 6.028, "torque_Nm": -29.1,"current_A": -1.23, "temp_C": 25.3}
+{"timestamp": 0.160, "joint": "J1", "angle_rad": 0.5593, "velocity_rad_s": 6.293, "torque_Nm": -20.6,"current_A": -0.87, "temp_C": 25.4}
+{"timestamp": 0.170, "joint": "J1", "angle_rad": 0.6237, "velocity_rad_s": 6.527, "torque_Nm": -11.8,"current_A": -0.50, "temp_C": 25.4}
+{"timestamp": 0.180, "joint": "J1", "angle_rad": 0.6900, "velocity_rad_s": 6.727, "torque_Nm": -5.4, "current_A": -0.23, "temp_C": 25.5}
+{"timestamp": 0.190, "joint": "J1", "angle_rad": 0.7580, "velocity_rad_s": 6.892, "torque_Nm": -1.1, "current_A": -0.05, "temp_C": 25.5}
+{"timestamp": 0.200, "joint": "J1", "angle_rad": 0.8275, "velocity_rad_s": 7.021, "torque_Nm":  0.8, "current_A":  0.03, "temp_C": 25.6}
+{"timestamp": 0.210, "joint": "J1", "angle_rad": 0.8982, "velocity_rad_s": 7.114, "torque_Nm":  1.1, "current_A":  0.05, "temp_C": 25.6}
+{"timestamp": 0.220, "joint": "J1", "angle_rad": 0.9699, "velocity_rad_s": 7.170, "torque_Nm":  0.5, "current_A":  0.02, "temp_C": 25.6, "status": "stable"}
+{"timestamp": 0.230, "joint": "J1", "angle_rad": 1.0424, "velocity_rad_s": 7.190, "torque_Nm":  0.0, "current_A":  0.00, "temp_C": 25.7, "status": "stable"}
+{"timestamp": 0.240, "joint": "J1", "angle_rad": 1.1153, "velocity_rad_s": 7.171, "torque_Nm": -0.6, "current_A": -0.03, "temp_C": 25.7, "status": "stable"}

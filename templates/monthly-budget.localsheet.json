@@ -1,0 +1,124 @@
+{
+  "version": "2.0",
+  "tool": "localsheets",
+  "meta": { "title": "Monthly Budget" },
+  "created": "2026-05-25T00:00:00Z",
+  "modified": "2026-05-25T00:00:00Z",
+  "sheets": {
+    "s_budget": {
+      "name": "Budget",
+      "cells": {
+        "A1": { "raw": "Category",       "value": "Category",       "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "B1": { "raw": "Budgeted",       "value": "Budgeted",       "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "C1": { "raw": "Actual",         "value": "Actual",         "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "D1": { "raw": "Diff (- = over)", "value": "Diff (- = over)", "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "E1": { "raw": "Plan vs Actual", "value": "Plan vs Actual", "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+
+        "A2": { "raw": "── INCOME ──",   "value": "── INCOME ──",   "type": "text", "format": { "bold": true } },
+
+        "A3": { "raw": "Salary",         "value": "Salary",         "type": "text" },
+        "B3": { "raw": "5000",           "value": 5000,             "type": "number", "format": { "numfmt": "currency" } },
+        "C3": { "raw": "5000",           "value": 5000,             "type": "number", "format": { "numfmt": "currency" } },
+        "D3": { "raw": "=C3-B3",         "formula": "=C3-B3",        "format": { "numfmt": "currency" } },
+
+        "A4": { "raw": "Freelance",      "value": "Freelance",      "type": "text" },
+        "B4": { "raw": "500",            "value": 500,              "type": "number", "format": { "numfmt": "currency" } },
+        "C4": { "raw": "750",            "value": 750,              "type": "number", "format": { "numfmt": "currency" } },
+        "D4": { "raw": "=C4-B4",         "formula": "=C4-B4",        "format": { "numfmt": "currency" } },
+
+        "A6": { "raw": "Total Income",   "value": "Total Income",   "type": "text", "format": { "bold": true } },
+        "B6": { "raw": "=SUM(B3:B4)",    "formula": "=SUM(B3:B4)",   "format": { "numfmt": "currency", "bold": true } },
+        "C6": { "raw": "=SUM(C3:C4)",    "formula": "=SUM(C3:C4)",   "format": { "numfmt": "currency", "bold": true } },
+        "D6": { "raw": "=C6-B6",         "formula": "=C6-B6",        "format": { "numfmt": "currency", "bold": true } },
+
+        "A8": { "raw": "── EXPENSES ──", "value": "── EXPENSES ──", "type": "text", "format": { "bold": true } },
+
+        "A9":  { "raw": "Rent / Mortgage", "value": "Rent / Mortgage", "type": "text" },
+        "B9":  { "raw": "1800",          "value": 1800,             "type": "number", "format": { "numfmt": "currency" } },
+        "C9":  { "raw": "1800",          "value": 1800,             "type": "number", "format": { "numfmt": "currency" } },
+        "D9":  { "raw": "=B9-C9",        "formula": "=B9-C9",        "format": { "numfmt": "currency" } },
+        "E9":  { "raw": "=SPARKLINE(B9:C9, \"bar\", \"#5a4a2f\")", "formula": "=SPARKLINE(B9:C9, \"bar\", \"#5a4a2f\")" },
+
+        "A10": { "raw": "Groceries",     "value": "Groceries",      "type": "text" },
+        "B10": { "raw": "400",           "value": 400,              "type": "number", "format": { "numfmt": "currency" } },
+        "C10": { "raw": "435",           "value": 435,              "type": "number", "format": { "numfmt": "currency" } },
+        "D10": { "raw": "=B10-C10",      "formula": "=B10-C10",      "format": { "numfmt": "currency" } },
+        "E10": { "raw": "=SPARKLINE(B10:C10, \"bar\", \"#5a4a2f\")", "formula": "=SPARKLINE(B10:C10, \"bar\", \"#5a4a2f\")" },
+
+        "A11": { "raw": "Transportation","value": "Transportation","type": "text" },
+        "B11": { "raw": "200",           "value": 200,              "type": "number", "format": { "numfmt": "currency" } },
+        "C11": { "raw": "185",           "value": 185,              "type": "number", "format": { "numfmt": "currency" } },
+        "D11": { "raw": "=B11-C11",      "formula": "=B11-C11",      "format": { "numfmt": "currency" } },
+        "E11": { "raw": "=SPARKLINE(B11:C11, \"bar\", \"#5a4a2f\")", "formula": "=SPARKLINE(B11:C11, \"bar\", \"#5a4a2f\")" },
+
+        "A12": { "raw": "Utilities",     "value": "Utilities",     "type": "text" },
+        "B12": { "raw": "150",           "value": 150,              "type": "number", "format": { "numfmt": "currency" } },
+        "C12": { "raw": "162",           "value": 162,              "type": "number", "format": { "numfmt": "currency" } },
+        "D12": { "raw": "=B12-C12",      "formula": "=B12-C12",      "format": { "numfmt": "currency" } },
+        "E12": { "raw": "=SPARKLINE(B12:C12, \"bar\", \"#5a4a2f\")", "formula": "=SPARKLINE(B12:C12, \"bar\", \"#5a4a2f\")" },
+
+        "A13": { "raw": "Internet",      "value": "Internet",      "type": "text" },
+        "B13": { "raw": "80",            "value": 80,               "type": "number", "format": { "numfmt": "currency" } },
+        "C13": { "raw": "80",            "value": 80,               "type": "number", "format": { "numfmt": "currency" } },
+        "D13": { "raw": "=B13-C13",      "formula": "=B13-C13",      "format": { "numfmt": "currency" } },
+        "E13": { "raw": "=SPARKLINE(B13:C13, \"bar\", \"#5a4a2f\")", "formula": "=SPARKLINE(B13:C13, \"bar\", \"#5a4a2f\")" },
+
+        "A14": { "raw": "Phone",         "value": "Phone",         "type": "text" },
+        "B14": { "raw": "60",            "value": 60,               "type": "number", "format": { "numfmt": "currency" } },
+        "C14": { "raw": "60",            "value": 60,               "type": "number", "format": { "numfmt": "currency" } },
+        "D14": { "raw": "=B14-C14",      "formula": "=B14-C14",      "format": { "numfmt": "currency" } },
+        "E14": { "raw": "=SPARKLINE(B14:C14, \"bar\", \"#5a4a2f\")", "formula": "=SPARKLINE(B14:C14, \"bar\", \"#5a4a2f\")" },
+
+        "A15": { "raw": "Entertainment", "value": "Entertainment", "type": "text" },
+        "B15": { "raw": "150",           "value": 150,              "type": "number", "format": { "numfmt": "currency" } },
+        "C15": { "raw": "120",           "value": 120,              "type": "number", "format": { "numfmt": "currency" } },
+        "D15": { "raw": "=B15-C15",      "formula": "=B15-C15",      "format": { "numfmt": "currency" } },
+        "E15": { "raw": "=SPARKLINE(B15:C15, \"bar\", \"#5a4a2f\")", "formula": "=SPARKLINE(B15:C15, \"bar\", \"#5a4a2f\")" },
+
+        "A16": { "raw": "Dining Out",    "value": "Dining Out",    "type": "text" },
+        "B16": { "raw": "200",           "value": 200,              "type": "number", "format": { "numfmt": "currency" } },
+        "C16": { "raw": "280",           "value": 280,              "type": "number", "format": { "numfmt": "currency" } },
+        "D16": { "raw": "=B16-C16",      "formula": "=B16-C16",      "format": { "numfmt": "currency" } },
+        "E16": { "raw": "=SPARKLINE(B16:C16, \"bar\", \"#5a4a2f\")", "formula": "=SPARKLINE(B16:C16, \"bar\", \"#5a4a2f\")" },
+
+        "A17": { "raw": "Healthcare",    "value": "Healthcare",    "type": "text" },
+        "B17": { "raw": "100",           "value": 100,              "type": "number", "format": { "numfmt": "currency" } },
+        "C17": { "raw": "45",            "value": 45,               "type": "number", "format": { "numfmt": "currency" } },
+        "D17": { "raw": "=B17-C17",      "formula": "=B17-C17",      "format": { "numfmt": "currency" } },
+        "E17": { "raw": "=SPARKLINE(B17:C17, \"bar\", \"#5a4a2f\")", "formula": "=SPARKLINE(B17:C17, \"bar\", \"#5a4a2f\")" },
+
+        "A18": { "raw": "Savings",       "value": "Savings",       "type": "text" },
+        "B18": { "raw": "500",           "value": 500,              "type": "number", "format": { "numfmt": "currency" } },
+        "C18": { "raw": "500",           "value": 500,              "type": "number", "format": { "numfmt": "currency" } },
+        "D18": { "raw": "=B18-C18",      "formula": "=B18-C18",      "format": { "numfmt": "currency" } },
+        "E18": { "raw": "=SPARKLINE(B18:C18, \"bar\", \"#5a4a2f\")", "formula": "=SPARKLINE(B18:C18, \"bar\", \"#5a4a2f\")" },
+
+        "A19": { "raw": "Miscellaneous", "value": "Miscellaneous", "type": "text" },
+        "B19": { "raw": "100",           "value": 100,              "type": "number", "format": { "numfmt": "currency" } },
+        "C19": { "raw": "130",           "value": 130,              "type": "number", "format": { "numfmt": "currency" } },
+        "D19": { "raw": "=B19-C19",      "formula": "=B19-C19",      "format": { "numfmt": "currency" } },
+        "E19": { "raw": "=SPARKLINE(B19:C19, \"bar\", \"#5a4a2f\")", "formula": "=SPARKLINE(B19:C19, \"bar\", \"#5a4a2f\")" },
+
+        "A20": { "raw": "Total Expenses","value": "Total Expenses","type": "text", "format": { "bold": true } },
+        "B20": { "raw": "=SUM(B9:B19)",  "formula": "=SUM(B9:B19)",  "format": { "numfmt": "currency", "bold": true } },
+        "C20": { "raw": "=SUM(C9:C19)",  "formula": "=SUM(C9:C19)",  "format": { "numfmt": "currency", "bold": true } },
+        "D20": { "raw": "=B20-C20",      "formula": "=B20-C20",      "format": { "numfmt": "currency", "bold": true } },
+
+        "A22": { "raw": "NET SAVINGS",   "value": "NET SAVINGS",   "type": "text", "format": { "bold": true, "bg": "#caffbf" } },
+        "B22": { "raw": "=B6-B20",       "formula": "=B6-B20",       "format": { "numfmt": "currency", "bold": true, "bg": "#caffbf" } },
+        "C22": { "raw": "=C6-C20",       "formula": "=C6-C20",       "format": { "numfmt": "currency", "bold": true, "bg": "#caffbf" } },
+        "D22": { "raw": "=C22-B22",      "formula": "=C22-B22",      "format": { "numfmt": "currency", "bold": true, "bg": "#caffbf" } }
+      },
+      "colWidths": { "0": 170, "1": 110, "2": 110, "3": 120, "4": 100 },
+      "rowHeights": {},
+      "conditionalRules": [
+        { "range": "D3:D22", "op": ">", "value": "0", "bg": "#caffbf" },
+        { "range": "D3:D22", "op": "<", "value": "0", "bg": "#ffadad" }
+      ],
+      "selR": 0, "selC": 1
+    }
+  },
+  "sheetOrder": ["s_budget"],
+  "activeSheet": "s_budget",
+  "settings": { "theme": "auto" }
+}

@@ -1,0 +1,54 @@
+{
+  "version": "2.0",
+  "tool": "localsheets",
+  "meta": { "title": "Mortgage Calculator" },
+  "created": "2026-05-25T00:00:00Z",
+  "modified": "2026-05-25T00:00:00Z",
+  "sheets": {
+    "s_calc": {
+      "name": "Calculator",
+      "cells": {
+        "A1": { "raw": "MORTGAGE INPUTS", "value": "MORTGAGE INPUTS", "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+
+        "A2": { "raw": "Home price",      "value": "Home price",      "type": "text" },
+        "B2": { "raw": "450000",          "value": 450000,            "type": "number", "format": { "numfmt": "currency" } },
+        "A3": { "raw": "Down payment %",  "value": "Down payment %",  "type": "text" },
+        "B3": { "raw": "0.20",            "value": 0.2,               "type": "number", "format": { "numfmt": "percent" } },
+        "A4": { "raw": "Down payment $",  "value": "Down payment $",  "type": "text" },
+        "B4": { "raw": "=B2*B3",          "formula": "=B2*B3",         "format": { "numfmt": "currency" } },
+        "A5": { "raw": "Loan amount",     "value": "Loan amount",     "type": "text", "format": { "bold": true } },
+        "B5": { "raw": "=B2-B4",          "formula": "=B2-B4",         "format": { "numfmt": "currency", "bold": true } },
+        "A6": { "raw": "Annual rate",     "value": "Annual rate",     "type": "text" },
+        "B6": { "raw": "0.0675",          "value": 0.0675,            "type": "number", "format": { "numfmt": "percent" } },
+        "A7": { "raw": "Term (years)",    "value": "Term (years)",    "type": "text" },
+        "B7": { "raw": "30",              "value": 30,                "type": "number" },
+
+        "A9": { "raw": "MONTHLY PAYMENT", "value": "MONTHLY PAYMENT", "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "A10": { "raw": "Principal + interest", "value": "Principal + interest", "type": "text" },
+        "B10": { "raw": "=-PMT(B6/12, B7*12, B5)", "formula": "=-PMT(B6/12, B7*12, B5)", "format": { "numfmt": "currency", "bold": true, "bg": "#fdffb6" } },
+        "A11": { "raw": "Estimated tax + insurance", "value": "Estimated tax + insurance", "type": "text" },
+        "B11": { "raw": "=B2*0.015/12",   "formula": "=B2*0.015/12",   "format": { "numfmt": "currency" } },
+        "A12": { "raw": "Total housing cost", "value": "Total housing cost", "type": "text", "format": { "bold": true } },
+        "B12": { "raw": "=B10+B11",       "formula": "=B10+B11",       "format": { "numfmt": "currency", "bold": true } },
+
+        "A14": { "raw": "LIFETIME COST",  "value": "LIFETIME COST",  "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "A15": { "raw": "Total paid over loan", "value": "Total paid over loan", "type": "text" },
+        "B15": { "raw": "=B10*B7*12",     "formula": "=B10*B7*12",     "format": { "numfmt": "currency" } },
+        "A16": { "raw": "Total interest", "value": "Total interest", "type": "text", "format": { "bold": true } },
+        "B16": { "raw": "=B15-B5",        "formula": "=B15-B5",        "format": { "numfmt": "currency", "bold": true, "bg": "#ffadad" } },
+
+        "A18": { "raw": "AFFORDABILITY (28% rule)", "value": "AFFORDABILITY (28% rule)", "type": "text", "format": { "italic": true } },
+        "A19": { "raw": "Required gross monthly income", "value": "Required gross monthly income", "type": "text" },
+        "B19": { "raw": "=B12/0.28",      "formula": "=B12/0.28",      "format": { "numfmt": "currency" } },
+        "A20": { "raw": "Required gross annual income", "value": "Required gross annual income", "type": "text" },
+        "B20": { "raw": "=B19*12",        "formula": "=B19*12",        "format": { "numfmt": "currency", "bold": true } }
+      },
+      "colWidths": { "0": 240, "1": 160 },
+      "rowHeights": {},
+      "selR": 1, "selC": 1
+    }
+  },
+  "sheetOrder": ["s_calc"],
+  "activeSheet": "s_calc",
+  "settings": { "theme": "auto" }
+}

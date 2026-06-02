@@ -1,0 +1,54 @@
+{
+  "version": "2.0",
+  "tool": "localsheets",
+  "meta": { "title": "Startup Burn Rate" },
+  "created": "2026-05-25T00:00:00Z",
+  "modified": "2026-05-25T00:00:00Z",
+  "sheets": {
+    "s_burn": {
+      "name": "Burn",
+      "cells": {
+        "A1": { "raw": "MONTHLY EXPENSES", "value": "MONTHLY EXPENSES", "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "B1": { "raw": "Amount ($)",       "value": "Amount ($)",       "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+
+        "A2": { "raw": "Salaries (eng)",   "value": "Salaries (eng)",   "type": "text" },
+        "B2": { "raw": "65000",            "value": 65000,              "type": "number", "format": { "numfmt": "currency" } },
+        "A3": { "raw": "Salaries (other)", "value": "Salaries (other)", "type": "text" },
+        "B3": { "raw": "18000",            "value": 18000,              "type": "number", "format": { "numfmt": "currency" } },
+        "A4": { "raw": "Cloud / Infra",    "value": "Cloud / Infra",    "type": "text" },
+        "B4": { "raw": "4500",             "value": 4500,               "type": "number", "format": { "numfmt": "currency" } },
+        "A5": { "raw": "SaaS tools",       "value": "SaaS tools",       "type": "text" },
+        "B5": { "raw": "1800",             "value": 1800,               "type": "number", "format": { "numfmt": "currency" } },
+        "A6": { "raw": "Marketing",        "value": "Marketing",        "type": "text" },
+        "B6": { "raw": "5000",             "value": 5000,               "type": "number", "format": { "numfmt": "currency" } },
+        "A7": { "raw": "Office / Misc",    "value": "Office / Misc",    "type": "text" },
+        "B7": { "raw": "2500",             "value": 2500,               "type": "number", "format": { "numfmt": "currency" } },
+
+        "A9": { "raw": "Total monthly burn",   "value": "Total monthly burn",   "type": "text", "format": { "bold": true } },
+        "B9": { "raw": "=SUM(B2:B7)",          "formula": "=SUM(B2:B7)",         "format": { "numfmt": "currency", "bold": true, "bg": "#fdffb6" } },
+
+        "A11": { "raw": "RUNWAY",          "value": "RUNWAY",          "type": "text", "format": { "bold": true, "bg": "#5a4a2f", "fg": "#ffffff" } },
+        "A12": { "raw": "Cash on hand",    "value": "Cash on hand",    "type": "text" },
+        "B12": { "raw": "850000",          "value": 850000,            "type": "number", "format": { "numfmt": "currency" } },
+        "A13": { "raw": "Months runway",   "value": "Months runway",   "type": "text", "format": { "bold": true } },
+        "B13": { "raw": "=B12/B9",         "formula": "=B12/B9",        "format": { "numfmt": "number", "bold": true, "bg": "#caffbf" } },
+        "A14": { "raw": "Years runway",    "value": "Years runway",    "type": "text" },
+        "B14": { "raw": "=B13/12",         "formula": "=B13/12",        "format": { "numfmt": "number" } },
+        "A15": { "raw": "Out-of-cash date","value": "Out-of-cash date","type": "text" },
+        "B15": { "raw": "=EDATE(TODAY(), B13)", "formula": "=EDATE(TODAY(), B13)", "format": { "numfmt": "date" } },
+
+        "A17": { "raw": "SENSITIVITY: cut 20% of burn", "value": "SENSITIVITY: cut 20% of burn", "type": "text", "format": { "italic": true } },
+        "A18": { "raw": "New burn",        "value": "New burn",        "type": "text" },
+        "B18": { "raw": "=B9*0.8",         "formula": "=B9*0.8",        "format": { "numfmt": "currency" } },
+        "A19": { "raw": "New months runway", "value": "New months runway", "type": "text" },
+        "B19": { "raw": "=B12/B18",        "formula": "=B12/B18",       "format": { "numfmt": "number", "bold": true } }
+      },
+      "colWidths": { "0": 200, "1": 160 },
+      "rowHeights": {},
+      "selR": 12, "selC": 1
+    }
+  },
+  "sheetOrder": ["s_burn"],
+  "activeSheet": "s_burn",
+  "settings": { "theme": "auto" }
+}
