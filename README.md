@@ -6,6 +6,9 @@ No accounts. No cloud. No subscription. No analytics. No tracking. One HTML file
 
 MIT licensed. Your data stays in a plain JSON file on your disk.
 
+**Try Online**
+[**Launch LocalSheet Live**](https://zohaibus.github.io/localsheets/localsheets.html)
+
 Part of the LocalOffice suite, alongside
 [DeckBuilder](https://github.com/zohaibus/deckbuilder) and
 [Context Protocol](https://github.com/zohaibus/context-protocol).
